@@ -14,7 +14,7 @@ const Navbar = () => {
       </div>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="absolute right-0 top-4 flex items-center mr-4 z-10 md:hidden"
+        className="absolute right-0 top-4 flex items-center mr-4 z-50 md:hidden"
       >
         {!isOpen ? (
           <svg
@@ -30,7 +30,7 @@ const Navbar = () => {
               x2="42"
               y2="33"
               stroke="#393B44"
-              stroke-width="2"
+              strokeWidth="2"
             />
             <line
               x1="6"
@@ -38,7 +38,7 @@ const Navbar = () => {
               x2="42"
               y2="23"
               stroke="#393B44"
-              stroke-width="2"
+              strokeWidth="2"
             />
             <line
               x1="6"
@@ -46,7 +46,7 @@ const Navbar = () => {
               x2="42"
               y2="13"
               stroke="#393B44"
-              stroke-width="2"
+              strokeWidth="2"
             />
           </svg>
         ) : (
@@ -63,7 +63,7 @@ const Navbar = () => {
               x2="36.1629"
               y2="35.7487"
               stroke="#F1F3F8"
-              stroke-width="2"
+              strokeWidth="2"
             />
             <line
               x1="10.2929"
@@ -71,17 +71,17 @@ const Navbar = () => {
               x2="35.7487"
               y2="10.2929"
               stroke="#F1F3F8"
-              stroke-width="2"
+              strokeWidth="2"
             />
           </svg>
         )}
       </button>
-      <div className={`${!isOpen ? "hidden" : "block"} md:flex `}>
+      <div className={`${!isOpen ? "hidden" : "block"} md:flex z-10`}>
         <div className="flex flex-col flex-nowrap justify-center items-center bg-secondary absolute top-0 right-0 h-screen w-full md:flex-row md:h-16 md:w-auto md:bg-light ">
           <div className="flex flex-col items-center justify-center font-display font-semibold text-light text-2xl uppercase tracking-widest md:flex-row md:text-primary md:text-sm md:mr-2 md:font-normal lg:font-semibold">
             <Link
               className=" p-5 hover:bg-sky hover:text-primary md:pr-2 lg:pr-4 "
-              to="/gallery"
+              to="/works"
             >
               Галерея
             </Link>

@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
       <Navbar />
       {/* <Header siteTitle={data.site.siteMetadata?.title || "Title"} /> */}
       <div>
-        <main className="h-screen bg-sky">{children}</main>
+        <main className=" bg-sky p-4">{children}</main>
         <footer>
           © {new Date().getFullYear()}, Cretated by{" "}
           <a href="https://github.com/Munime">Andrew AJ</a>
