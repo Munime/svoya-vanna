@@ -9,21 +9,21 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div className="grid">
-        <div className=" pt-12 text-primary">
-          <h1 className="font-display text-4xl font-bold leading-12">
+      <div className="grid ">
+        <div className=" pt-12 text-primary lg:m-12">
+          <h1 className="font-display text-4xl font-bold leading-12 lg:text-5xl lg:leading-16 lg:text-center">
             Проектування і виготовлення вологостійких меблів для ванних кімнат
           </h1>
         </div>
-        <div className="mt-6 max-h-96 overflow-hidden">
+        <div className="mt-6 max-h-96 overflow-hidden lg:m-8">
           <img
             className="h-full w-full object-cover"
             src="https://source.unsplash.com/user/misterdoulou"
             alt="bathroom"
           />
         </div>
-        <div className=" text-primary text-center mt-6">
-          <p className="font-display font-medium text-sm leading-8">
+        <div className=" text-primary text-center mt-6 lg:m-12">
+          <p className="font-display font-medium text-sm leading-8 lg:text-lg lg:leading-12">
             Ванна кімната - дуже важливе місце в квартирі. Тут ми розслабляємося
             вечорами після важкого трудового дня або опоряджаємося з ранку.
             Водні процедури повинні приносити емоційне і естетичне задоволення.
@@ -42,7 +42,7 @@ const IndexPage = () => {
           </button>
         </div>
         <div className="bg-light -m-4 grid lg:grid-cols-3 gap-6 pb-16">
-          <div className="flex flex-col items-center mt-12 p-4 ">
+          <div className="flex flex-col items-center mt-12 p-4 lg:my-32">
             <div className="mb-6">
               <svg
                 width="36"
@@ -76,7 +76,7 @@ const IndexPage = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col items-center mt-8  p-4 md:mt-12">
+          <div className="flex flex-col items-center mt-8  p-4 lg:my-32">
             <div className="mb-6">
               <svg
                 width="36"
@@ -108,7 +108,7 @@ const IndexPage = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col items-center mt-8 mb-6 p-4 md:mt-12">
+          <div className="flex flex-col items-center mt-8 mb-6 p-4 lg:my-32">
             <div className="mb-6">
               <svg
                 width="36"
@@ -134,43 +134,45 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-        <div className="bg-primary -m-4">
-          <div className="mt-24 mb-16 flex justify-center border-b-4 border-light ">
-            <h2 className="font-display font-bold text-xl text-light lowercase leading-relaxed pb-2">
+        <div className="bg-primary -m-4 ">
+          <div className="mt-24 mb-16 flex justify-center md:mb-24">
+            <h2 className="font-display font-bold text-xl text-light lowercase leading-relaxed pb-2 border-b-4 border-light ">
               Наші Переваги
             </h2>
           </div>
-          <Accordion
-            title={"Матеріали"}
-            content={
-              "Наші меблі для ванних кімнат виготовляється виключно з вологостійкої ДСП австрійської фірми EGGER і фінської ДСП PUHOS BOARD клас P5. Фасадна частина виконується з МДФ 19 мм, покритого емаллю (будь-який колір згідно RAL), шпоном, плівкою або скло в алюмінієвій рамці."
-            }
-          />
-          <Accordion
-            title={"Фурнітура"}
-            content={
-              "Надійна фурнітура від європейських виробників Blum, FGV, Siso, Graas, Hettich забезпечує довгу і надійну роботу всіх рухомих частин конструкції."
-            }
-          />
-          <Accordion
-            title={"Проектування"}
-            content={
-              "Ми можемо розробити для Вас свій дизайн меблів або підправити дизайн меблів з каталогу, підганяючи його до розмірів Вашої ванної, до кольорової гами і стилю обраної плитки."
-            }
-          />
-          <Accordion
-            title={"Індивідуальний підхід"}
-            content={
-              "Ви маєте можливість самостійно або з нашою допомогою вибрати фурнітуру і форму фасадів, колір корпусу і вид ручок, конструкцію і наповнення Ваших меблів."
-            }
-          />
+          <div className="md:m-32">
+            <Accordion
+              title={"Матеріали"}
+              content={
+                "Наші меблі для ванних кімнат виготовляється виключно з вологостійкої ДСП австрійської фірми EGGER і фінської ДСП PUHOS BOARD клас P5. Фасадна частина виконується з МДФ 19 мм, покритого емаллю (будь-який колір згідно RAL), шпоном, плівкою або скло в алюмінієвій рамці."
+              }
+            />
+            <Accordion
+              title={"Фурнітура"}
+              content={
+                "Надійна фурнітура від європейських виробників Blum, FGV, Siso, Graas, Hettich забезпечує довгу і надійну роботу всіх рухомих частин конструкції."
+              }
+            />
+            <Accordion
+              title={"Проектування"}
+              content={
+                "Ми можемо розробити для Вас свій дизайн меблів або підправити дизайн меблів з каталогу, підганяючи його до розмірів Вашої ванної, до кольорової гами і стилю обраної плитки."
+              }
+            />
+            <Accordion
+              title={"Індивідуальний підхід"}
+              content={
+                "Ви маєте можливість самостійно або з нашою допомогою вибрати фурнітуру і форму фасадів, колір корпусу і вид ручок, конструкцію і наповнення Ваших меблів."
+              }
+            />
+          </div>
 
           <div className="flex justify-center mt-8 mb-32">
             <button
               onClick={() => navigate("/contact")}
               className="uppercase text-primary font-display rounded-sm bg-light p-2 text-center mx-auto my-0 mt-12 mb-12 hover:bg-secondary hover:text-light"
             >
-              <span className="font-bold tracking-widest text-sm p-1 ">
+              <span className="font-bold tracking-widest text-sm p-8 ">
                 Замовити
               </span>
             </button>

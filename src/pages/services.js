@@ -8,12 +8,12 @@ const Services = () => (
   <Layout>
     <SEO title="Послуги" />
     <div className="bg-sky -m-4">
-      <div className="mt-24 mb-16 flex justify-center border-b-4 border-primary ">
-        <h2 className="font-display font-bold text-xl text-primary lowercase leading-relaxed pb-2">
+      <div className="mt-24 mb-16 flex justify-center ">
+        <h2 className="font-display font-bold text-xl text-primary lowercase leading-relaxed pb-2 border-b-4 border-primary ">
           Наші Послуги
         </h2>
       </div>
-      <div className="mb-24 mt-24">
+      <div className="mb-24 mt-24 lg:mx-12 lg:my-32 lg:mb-64">
         <Accordion
           title={"Заміри"}
           content={
@@ -41,12 +41,12 @@ const Services = () => (
       </div>
     </div>
     <div className="bg-secondary -m-4">
-      <div className="mt-24 flex justify-center border-b-4 border-primary pb-4">
-        <h2 className="font-display font-bold text-xl text-primary lowercase leading-relaxed pb-2 pt-12">
+      <div className="mt-24 flex justify-center pb-4 lg:p-12">
+        <h2 className="font-display font-bold text-xl text-primary lowercase leading-relaxed pb-2 pt-12 border-b-4 border-primary">
           Процес
         </h2>
       </div>
-      <div className="p-4 pt-8 font-display font-normal text-sm tracking-widest leading-8">
+      <div className="p-4 pt-8 font-display font-normal text-sm tracking-widest leading-8 lg:p-12 lg:leading-9">
         <p>
           Ми виробляємо вологостійкі меблі для ванних кімнат на замовлення
           Індивідуальні меблі для ванної виконується з вологостійких ДСП

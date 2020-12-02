@@ -7,7 +7,7 @@ const About = () => (
   <Layout>
     <SEO title="Про нас" />
     <div className="grid">
-      <div className=" pt-12 text-primary">
+      <div className=" pt-12 text-primary lg:m-12 lg:text-center">
         <h1 className="font-display text-2xl font-bold leading-12">
           Ми спроектуємо і виготовимо за Вашим індивідуальним замовленням
           ексклюзивні вологостійкі меблі для ванної кімнати, які будуть
