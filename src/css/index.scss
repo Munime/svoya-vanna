@@ -3,3 +3,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .accordion-dark {
+    @apply bg-secondary border-b-2 border-light mx-4 flex flex-col justify-center;
+  }
+  .accordion-transparent {
+    @apply bg-sky border-b-2 border-primary mx-4 flex flex-col justify-center;
+  }
+}

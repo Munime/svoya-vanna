@@ -1,11 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
 import { navigate } from "gatsby"
+import { AccordionType } from "../components/theme"
 
 import SEO from "../components/seo"
 import Accordion from "../components/accordion"
 
 const IndexPage = () => {
+  const { dark, titleLight, contentLight, chevronLight } = AccordionType
   return (
     <Layout>
       <SEO title="Home" />
@@ -142,24 +144,40 @@ const IndexPage = () => {
           </div>
           <div className="md:m-32">
             <Accordion
+              chevronFill={chevronLight}
+              titleColor={titleLight}
+              contentColor={contentLight}
+              background={dark}
               title={"Матеріали"}
               content={
                 "Наші меблі для ванних кімнат виготовляється виключно з вологостійкої ДСП австрійської фірми EGGER і фінської ДСП PUHOS BOARD клас P5. Фасадна частина виконується з МДФ 19 мм, покритого емаллю (будь-який колір згідно RAL), шпоном, плівкою або скло в алюмінієвій рамці."
               }
             />
             <Accordion
+              titleColor={titleLight}
+              contentColor={contentLight}
+              chevronFill={chevronLight}
+              background={dark}
               title={"Фурнітура"}
               content={
                 "Надійна фурнітура від європейських виробників Blum, FGV, Siso, Graas, Hettich забезпечує довгу і надійну роботу всіх рухомих частин конструкції."
               }
             />
             <Accordion
+              titleColor={titleLight}
+              contentColor={contentLight}
+              chevronFill={chevronLight}
+              background={dark}
               title={"Проектування"}
               content={
                 "Ми можемо розробити для Вас свій дизайн меблів або підправити дизайн меблів з каталогу, підганяючи його до розмірів Вашої ванної, до кольорової гами і стилю обраної плитки."
               }
             />
             <Accordion
+              titleColor={titleLight}
+              contentColor={contentLight}
+              chevronFill={chevronLight}
+              background={dark}
               title={"Індивідуальний підхід"}
               content={
                 "Ви маєте можливість самостійно або з нашою допомогою вибрати фурнітуру і форму фасадів, колір корпусу і вид ручок, конструкцію і наповнення Ваших меблів."
