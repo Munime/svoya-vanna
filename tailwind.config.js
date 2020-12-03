@@ -21,7 +21,10 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      textDecoration: ["focus-visible"],
+      translate: ["motion-safe"],
+    },
   },
   plugins: [],
 }

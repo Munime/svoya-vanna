@@ -45,7 +45,7 @@ const Prices = () => (
       <div className="flex justify-center mt-8 pb-32">
         <button
           onClick={() => navigate("/contact")}
-          className="uppercase text-light font-display rounded-sm bg-primary p-2 text-center mx-auto my-0 mt-12 mb-12 hover:bg-light hover:text-primary hover:border-primary"
+          className="uppercase text-light font-display rounded-sm bg-primary p-2 text-center mx-auto my-0 mt-12 mb-12 transition duration-200 ease-in-out hover:bg-secondary"
         >
           <span className="font-bold tracking-widest text-sm p-8 ">
             Звя'затися

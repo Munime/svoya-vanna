@@ -115,7 +115,7 @@ const Services = () => {
         <div className="flex justify-center mt-8 pb-32">
           <button
             onClick={() => navigate("/contact")}
-            className="uppercase text-primary font-display rounded-sm bg-light p-2 text-center mx-auto my-0 mt-12 mb-12 hover:bg-primary hover:text-light"
+            className="uppercase text-primary font-display rounded-sm bg-light p-2 text-center mx-auto my-0 mt-12 mb-12 transition duration-200 ease-in-out hover:bg-primary hover:text-light"
           >
             <span className="font-bold tracking-widest text-sm p-8 ">
               Звя'затися

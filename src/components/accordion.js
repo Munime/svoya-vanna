@@ -14,7 +14,7 @@ const Accordion = ({
     <div className={background}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className=" font-bold py-2 px-4 flex justify-between  focus:outline-none focus:ring-secondary transform hover: transition duration-500 hover:translate-x-1"
+        className=" font-bold py-2 px-4 flex justify-between transform hover: transition duration-500 hover:translate-x-1 focus:outline-none focus:ring-2 focus:ring-sky focus:border-transparent"
       >
         <span className={titleColor}>{title}</span>
         <div className="items-center p-4">

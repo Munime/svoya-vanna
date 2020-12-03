@@ -7,14 +7,18 @@ const Navbar = () => {
 
   return (
     <nav className="flex w-full h-full justify-between bg-light">
-      <div className="p-4">
+      <div className="p-4 ">
         <Link to="/">
-          <img src={logo} alt="svoya-vanna-logo" />
+          <img
+            className="focus:outline-none focus:ring-2 focus:ring-sky focus:border-transparent"
+            src={logo}
+            alt="svoya-vanna-logo"
+          />
         </Link>
       </div>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="absolute right-0 top-4 flex items-center mr-4 z-50 md:hidden"
+        className="absolute right-0 top-0 mt-3 flex items-center mr-4 z-50 focus:outline-none focus:ring-2 focus:ring-sky focus:border-transparent md:hidden"
       >
         {!isOpen ? (
           <svg
@@ -76,8 +80,8 @@ const Navbar = () => {
           </svg>
         )}
       </button>
-      <div className={`${!isOpen ? "hidden" : "block"} md:flex z-10`}>
-        <div className="flex flex-col flex-nowrap justify-center items-center bg-secondary absolute top-0 right-0 h-screen w-full md:flex-row md:h-16 md:w-auto md:bg-light ">
+      <div className={`${!isOpen ? "hidden" : "block"} md:flex z-10 `}>
+        <div className="flex flex-col flex-nowrap justify-center items-center bg-secondary absolute top-0 right-0 h-screen w-full  md:flex-row md:h-16 md:w-auto md:bg-light ">
           <div className="flex flex-col items-center justify-center font-display font-semibold text-light text-2xl uppercase tracking-widest md:flex-row md:text-primary md:text-sm md:mr-2 md:font-normal lg:font-semibold">
             <Link
               className=" p-5 hover:bg-sky hover:text-primary md:pr-2 lg:pr-4 "

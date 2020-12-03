@@ -35,7 +35,7 @@ const IndexPage = () => {
         </div>
         <div className="text-center mt-4 mb-16">
           <button
-            className="text-light font-display rounded-sm bg-primary p-2 text-center mx-auto my-0 mt-12 mb-12 hover:bg-secondary hover:text-primary"
+            className="text-light font-display rounded-sm bg-primary p-2 text-center mx-auto my-0 mt-12 mb-12 hover:bg-secondary hover:text-primary focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent"
             onClick={() => navigate("/works")}
           >
             <span className="uppercase font-bold tracking-widest text-sm p-1">
@@ -188,7 +188,7 @@ const IndexPage = () => {
           <div className="flex justify-center mt-8 mb-32">
             <button
               onClick={() => navigate("/contact")}
-              className="uppercase text-primary font-display rounded-sm bg-light p-2 text-center mx-auto my-0 mt-12 mb-12 hover:bg-secondary hover:text-light"
+              className="uppercase text-primary font-display rounded-sm bg-light p-2 text-center mx-auto my-0 mt-12 mb-12 hover:bg-secondary hover:text-light focus:outline-none focus:ring-4 focus:ring-secondary focus:border-transparent"
             >
               <span className="font-bold tracking-widest text-sm p-8 ">
                 Замовити

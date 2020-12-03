@@ -27,8 +27,8 @@ const Works = () => (
           image={"https://source.unsplash.com/featured/?`${bathroom},{bath}`"}
         />
       </div>
-      <div className="p-4 flex justify-center lg:p-12">
-        <button className="text-primary font-display rounded-sm bg-sky py-2 text-center mx-auto my-0 mt-12 mb-12 hover:bg-secondary hover:text-primary focus:outline-none focus:ring-secondary focus:ring-2 focus:ring-opacity-50">
+      <div className="p-4 flex justify-center pt-24 pb-24 lg:p-12">
+        <button className="transition duration-200 ease-in-out text-primary font-display rounded-sm bg-sky py-2 text-center mx-auto my-0  hover:bg-secondary hover:text-light focus:outline-none focus:ring-secondary focus:ring-2">
           <span className="uppercase font-bold tracking-widest text-sm p-8">
             Замовити
           </span>
